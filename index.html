@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (max-width: 720px) {
+        .card-product {
+          width: 90%;
+        }
+
+        .nav ul {
+          flex-flow: column wrap;
+        }
+      }
+
+      @media screen and (min-width: 721px) {
+        .nav ul {
+          flex-direction: row;
+        }
+      }
+
+      .product-img {
+        width: 100%;
+      }
+
+      .product-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+      }
+
+      .card-product {
+        border: solid 1px #cebfbf;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 10px 15px 10px 0px rgb(0 0 0 / 10%);
+      }
+
+      .card-product:hover {
+          cursor: pointer;
+          box-shadow: 20px 15px 50px 0px rgb(0 0 0 / 35%);
+      }
+
+      .product-img {
+        border-radius: 8px 8px 0 0;
+      }
+
+      .title {
+        font-weight: 600;
+      }
+
+      .subtitle {
+        font-style: italic;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .nav ul {
+        margin: 0px;
+        padding: 0px;
+        border-top: solid 1px lightgrey;
+        border-bottom: solid 1px lightgrey;
+        list-style: none;
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav a {
+        padding: 1em;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product list</h1>
+    <nav class="nav" role="navigation">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Lien 4</a></li>
+        <li>
+            <select>
+                <option name="blue">Bleu</option>
+                <option name="yellow">Jaune</option>
+                <option name="green">Vert</option>
+            </select>
+        </li>
+      </ul>
+    </nav>
+    <div class="product-wrapper">
+      <div class="card-product">
+        <img
+          class="product-img"
+          alt="product"
+          src="https://picsum.photos/250/150"
+        />
+        <div class="card-content">
+          <p class="title">Product 1</p>
+          <p class="subtitle">SubTitle</p>
+          <p class="description">
+            Description friuohfer fer gerog her hguerhguehr ge
+          </p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img
+          class="product-img"
+          alt="product"
+          src="https://picsum.photos/250/150"
+        />
+        <div class="card-content">
+          <p class="title">Product 2</p>
+          <p class="subtitle">SubTitle</p>
+          <p class="description">
+            Description friuohfer fer gerog her hguerhguehr ge
+          </p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img
+          class="product-img"
+          alt="product"
+          src="https://picsum.photos/250/150"
+        />
+        <div class="card-content">
+          <p class="title">Product 3</p>
+          <p class="subtitle">SubTitle</p>
+          <p class="description">
+            Description friuohfer fer gerog her hguerhguehr ge
+          </p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img
+          class="product-img"
+          alt="product"
+          src="https://picsum.photos/250/150"
+        />
+        <div class="card-content">
+          <p class="title">Product 4</p>
+          <p class="subtitle">SubTitle</p>
+          <p class="description">
+            Description friuohfer fer gerog her hguerhguehr ge
+          </p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img
+          class="product-img"
+          alt="product"
+          src="https://picsum.photos/250/150"
+        />
+        <div class="card-content">
+          <p class="title">Product 5</p>
+          <p class="subtitle">SubTitle</p>
+          <p class="description">
+            Description friuohfer fer gerog her hguerhguehr ge
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
